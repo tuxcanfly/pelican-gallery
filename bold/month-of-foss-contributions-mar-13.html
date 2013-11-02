@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+                <title>Does not compute | Month of FOSS contributions - Mar '13</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <link rel="stylesheet" type="text/css" href="./theme/css/base.css" />
+        <meta name="author" value="tuxcanfly" />
+        <meta name="description" value="Round up of my contributions to FOSS in Mar '13" />
+        <meta name="keywords" value="foss,contributions" />
+            </head>
+    <body>
+        <header class="site highlight">
+                            <h1 class="stamp lrot"></h1>
+                    </header>
+        <div class="site clearfix">
+            <nav class="lfloat">
+    <ul class="links">
+            <li>
+        <a class="stamp" href="./category/tech.html">tech</a>
+    </li>
+        <li>
+        <a class="stamp" href="./category/talk.html">talk</a>
+    </li>
+        <li>
+        <a class="stamp" href="./category/project.html">project</a>
+    </li>
+        <li>
+        <a class="stamp" href="./category/book-review.html">book-review</a>
+    </li>
+        <li class="active">
+        <a  href="./category/foss.html">FOSS</a>
+    </li>
+                            <li>
+                <a class="stamp" href="./pages/about-me.html">About me:</a>
+            </li>
+            </ul>
+        <ul class="social rfloat">
+            </ul>
+</nav>            <section class="content">
+                <h1 class="stamp">Month of FOSS contributions - Mar '13</h1>
+                                    <a href="/feeds/FOSS.atom.xml" class="feed"><img src="/theme/images/icons/rss.png"/></a>
+                                <div class="body">
+                    <article>
+    <footer>
+        <ul class="socialbtn">
+            <li></li>
+            <li><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tuxcanfly">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</li>
+        </ul>
+        Sunday, 31 March 2013
+                <address>
+            <a href="./author/javed-khan.html">Javed Khan</a>
+        </address>
+        
+        <ul class="tags"><lh>tags:</lh><li><a href="./tag/foss.html">foss</a></li><li><a href="./tag/contributions.html">contributions</a></li></ul>            </footer>
+
+    <div class="content">
+        <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+    </div><!-- /.entry-content -->
+
+        <div class="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_identifier = "month-of-foss-contributions-mar-13.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://tuxcanfly-github.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+    </div>
+    
+</article>
+                </div>
+            </section>
+         <footer class="site clearfix bs">
+    <section class="lfloat">
+        <ul>
+            <lh>categories</lh>
+                        <li><a href="./category/tech.html">tech</a></li>
+                        <li><a href="./category/talk.html">talk</a></li>
+                        <li><a href="./category/project.html">project</a></li>
+                        <li><a href="./category/book-review.html">book-review</a></li>
+                        <li><a href="./category/foss.html">FOSS</a></li>
+                    </ul>
+    </section>
+    <section class="lfloat">
+        <ul>
+            <lh>pages</lh>
+                        <li><a href="./pages/about-me.html">About me:</a></li?
+                    </ul>
+    </section>
+    <section class="rfloat">
+    <small>
+                <p>site generated by <a href="https://github.com/getpelican/pelican">pelican</a></p>
+        <p>theme by <a href="https://github.com/demianbrecht">demian brecht</a></p>
+    </small>
+    </section>
+</footer>        </div>
+            <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37076247-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    </body>
+</html>

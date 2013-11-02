@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
+	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
+	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
+
+	<link href="/" type="application/atom+xml" rel="alternate" title="Does not compute ATOM Feed" />
+			<link href="/feeds/all.xml" type="application/atom+xml" rel="alternate" title="Does not compute RSS Feed" />
+	
+			<title>Does not compute</title>
+		<meta charset="utf-8" />
+	</head>
+<body>
+	<section id="sidebar">
+		<figure id="user_logo">
+			<a href="/"><div class="logo">&nbsp;</div></a>
+		</figure>
+
+		<div class="user_meta">
+			<h1 id="user"><a href="/" class="">tuxcanfly</a></h1>
+			<h2></h2>
+			<ul>
+																			<li><a href="./pages/about-me.html">About me:</a></li>
+																</ul>
+		</div>
+		<footer>
+			<address>
+				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
+				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+			</address>
+		</footer>
+	</section>
+
+	<section id="posts">
+			<header>
+		<h1>Javed Khan's blog</h1>
+		<h3>Posted Sunday, 31 March 2013</h3>
+	</header>
+	<article>
+		<h1 id="title">
+			<a href="./month-of-foss-contributions-mar-13.html" rel="bookmark"
+				title="Permalink to Month of FOSS contributions - Mar '13">Month of FOSS contributions - Mar '13</a>
+		</h1>
+		<div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+
+		<div id="article_meta">
+							Category:
+					<a href="./category/foss.html">FOSS</a>
+										<br />Tags:
+									<a href="./tag/foss.html">foss</a>
+									<a href="./tag/contributions.html">contributions</a>
+									</div>
+	</article>
+
+	<footer>
+		<a href="./" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
+	</footer>
+
+		<div id="comments">
+		<h2>Comments</h2>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_identifier = "month-of-foss-contributions-mar-13.html";
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://tuxcanfly-github.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+	</div>
+	
+	</section>
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-37076247-1");
+			pageTracker._trackPageview();
+		} catch(err) {}</script>
+</body>
+</html>

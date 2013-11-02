@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Month of FOSS contributions - Feb '13</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/style.css" type="text/css" />
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute ATOM Feed" />
+    </head>
+    <body>
+        <h1>Month of FOSS contributions - Feb '13</h1>
+    <div class="info">
+         By <a class="url fn" href="#">Javed Khan</a>
+         on <a></a>
+     about <a href="./category/foss.html">FOSS</a>
+    </div>
+    <div class="section" id="about">
+<h2>About</h2>
+<p>I'm documenting my contributions to FOSS every month from now for two purposes:</p>
+<ul class="simple">
+<li>As a log of my activity</li>
+<li>To serve as a motivation for further participation</li>
+</ul>
+<p>Psst, also for boasting about it, wink wink.</p>
+</div>
+<div class="section" id="whoosh">
+<h2>Whoosh</h2>
+<p>While trying to work on django-haystack, I found a bug reported by Zed Shaw
+where a search query would crash the search page provided by haystack.</p>
+<p>Upon digging into haystack and whoosh, I found that there's a edge case in the
+whoosh query parser where passing a query containg a stop word and negative
+filter can raise an error (e.g: the query string <cite>?q=-1</cite>). I figured out a simple
+fix and submitted a pull request which was promptly accepted.</p>
+<p>I was hoping to find something to contribute to haystack and help with the
+maintanance, but looks like it will have to wait untill I get some more time.</p>
+<p><a class="reference external" href="https://bitbucket.org/mchaput/whoosh/commits/362fc2999c8cabc51370f433de7402fafd536ec6">362fc299</a></p>
+</div>
+<div class="section" id="django-browserid">
+<h2>django-browserid</h2>
+<p>I have always been a fan of mozilla and django-browserid looks like the perfect
+match for me to contribute towards. I tried out the library by going through
+the docs and found it to be a breeze. I was able to improve the docs a bit and
+triage a few bugs.</p>
+<p>I have to say people working on this project are very helpful and
+understanding. Looking forward to spending more time on this project in the
+future.</p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/f5fc0f124fda1fded862863ef56cab11f23c308d">f5fc0f12</a></p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/b9a17a4088211908de2a17a57668a646555f068a">b9a17a408</a></p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I really enjoyed working on these projects, and I'm looking forward to speding more time to get more
+comfortable with them and contributing even more. Here's to bigger, better things!</p>
+</div>
+
+
+    <div class="copyright info vcard">Design by <a class="fn url"
+    href="http://martyalchin.com">Marty Alchin</a>, <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">some rights reserved</a>. Powered by <a href="http://alexis.notomyidea.org/pelican/">pelican</a></div>
+    </body>
+</html>

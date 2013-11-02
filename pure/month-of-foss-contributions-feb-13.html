@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Does not compute, ">
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+    <link rel="stylesheet" href="./theme/pure.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://use.typekit.net/ajf8ggy.js"></script>
+    <script>
+        try { Typekit.load(); } catch (e) {}
+    </script>
+
+            <link href="/feeds/all.xml" type="application/atom+xml" rel="alternate" title="Does not compute RSS Feed" />
+    
+            <title>Month of FOSS contributions - Feb '13 // Does not compute // </title>
+    </head>
+
+<body>
+    <div class="pure-g-r content" id="layout">
+        <div class="pure-u" id="nav">
+            <a href="#" class="nav-menu-button">Menu</a>
+
+            <div class="nav-inner">
+                <h1>
+                    <a class="logo" href="."><img id="profileimg" src="" alt="Does not compute"></a>
+                </h1>
+                <div class="pure-menu pure-menu-open">
+                    <ul>
+                        <span class="pure-menu-heading">Does not compute</span>
+                                                                            <li><a href="./pages/about-me.html">About me:</a></li>
+                                                <li class="pure-menu-heading">Categories</li>
+                                                    <li><a href="./category/tech.html"><span class="cat-label-blue"></span>tech</a></li>
+                                                    <li><a href="./category/talk.html"><span class="cat-label-blue"></span>talk</a></li>
+                                                    <li><a href="./category/project.html"><span class="cat-label-blue"></span>project</a></li>
+                                                    <li><a href="./category/book-review.html"><span class="cat-label-blue"></span>book-review</a></li>
+                                                    <li><a href="./category/foss.html"><span class="cat-label-yellow"<span class="cat-label-blue"></span>FOSS</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+
+            <div class="pure-u-3-4">
+        <div class="article-content margin-blue">
+            <div class="article-content-header pure-g">
+                <div class="pure-u-1">
+                    <h1 class="article-content-title">Month of FOSS contributions - Feb '13</h1>
+                    <p class="article-content-subtitle">
+                        by <a href="./author/javed-khan.html">Javed Khan</a> on <span>Thursday, 28 February 2013</span>
+                        // Posted in <a href="./category/foss.html">FOSS</a>
+                                                    // under                                 <a class="post-category post-category-design" href="./tag/foss.html">foss</a>
+                                                            <a class="post-category post-category-design" href="./tag/contributions.html">contributions</a>
+                                                                        </p>
+                </div>
+            </div>
+            <div class="article-content-body">
+                <p>
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>I'm documenting my contributions to FOSS every month from now for two purposes:</p>
+<ul class="simple">
+<li>As a log of my activity</li>
+<li>To serve as a motivation for further participation</li>
+</ul>
+<p>Psst, also for boasting about it, wink wink.</p>
+</div>
+<div class="section" id="whoosh">
+<h2>Whoosh</h2>
+<p>While trying to work on django-haystack, I found a bug reported by Zed Shaw
+where a search query would crash the search page provided by haystack.</p>
+<p>Upon digging into haystack and whoosh, I found that there's a edge case in the
+whoosh query parser where passing a query containg a stop word and negative
+filter can raise an error (e.g: the query string <cite>?q=-1</cite>). I figured out a simple
+fix and submitted a pull request which was promptly accepted.</p>
+<p>I was hoping to find something to contribute to haystack and help with the
+maintanance, but looks like it will have to wait untill I get some more time.</p>
+<p><a class="reference external" href="https://bitbucket.org/mchaput/whoosh/commits/362fc2999c8cabc51370f433de7402fafd536ec6">362fc299</a></p>
+</div>
+<div class="section" id="django-browserid">
+<h2>django-browserid</h2>
+<p>I have always been a fan of mozilla and django-browserid looks like the perfect
+match for me to contribute towards. I tried out the library by going through
+the docs and found it to be a breeze. I was able to improve the docs a bit and
+triage a few bugs.</p>
+<p>I have to say people working on this project are very helpful and
+understanding. Looking forward to spending more time on this project in the
+future.</p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/f5fc0f124fda1fded862863ef56cab11f23c308d">f5fc0f12</a></p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/b9a17a4088211908de2a17a57668a646555f068a">b9a17a408</a></p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I really enjoyed working on these projects, and I'm looking forward to speding more time to get more
+comfortable with them and contributing even more. Here's to bigger, better things!</p>
+</div>
+
+                </p>
+                            <div class="comments">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        var disqus_identifier = "month-of-foss-contributions-feb-13.html";
+                        (function() {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = 'http://tuxcanfly-github.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+        <div class="pure-u-3-4">
+            <footer class="footer">
+                <p>&copy; Does not compute &ndash;
+                    Built with <a href="https://github.com/danclaudiupop/pure">Pure Theme</a>
+                    for <a href="http://blog.getpelican.com/">Pelican</a>
+                </p>
+                <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+                <a href="#" class="go-top">Go Top</a>
+            </footer>
+        </div>
+
+    <script src="http://yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
+    <script>
+        YUI().use('node-base', 'node-event-delegate', function (Y) {
+
+            var menuButton = Y.one('.nav-menu-button'),
+                nav        = Y.one('#nav');
+
+            // Setting the active class name expands the menu vertically on small screens.
+            menuButton.on('click', function (e) {
+                nav.toggleClass('active');
+            });
+
+            // Your application code goes here...
+
+        });
+    </script>
+    <script>
+        YUI().use('node-base', 'node-event-delegate', function (Y) {
+            // This just makes sure that the href="#" attached to the <a> elements
+            // don't scroll you back up the page.
+            Y.one('body').delegate('click', function (e) {
+                e.preventDefault();
+            }, 'a[href="#"]');
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Show or hide the sticky footer button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('.go-top').fadeIn(200);
+                } else {
+                    $('.go-top').fadeOut(200);
+                }
+            });
+
+            // Animate the scroll to top
+            $('.go-top').click(function(event) {
+                event.preventDefault();
+
+                $('html, body').animate({scrollTop: 0}, 300);
+            })
+        });
+    </script>
+
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-37076247-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+    </script>
+</body>
+</html>

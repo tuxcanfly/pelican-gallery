@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Does not compute</title>
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Atom Feed" />
+                
+        <link rel="stylesheet" href="./theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <ul id="nav">
+                <li class="selected"><a href=".">Home</a></li>
+                <li><a href="./pages/about-me.html">About me:</a></li>
+                <li><a href="./archives.html">Archives</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href=".">Does not compute</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">Feb 28,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="./month-of-foss-contributions-feb-13.html" rel="bookmark" title="Permanent Link to &quot;Month of FOSS contributions - Feb '13&quot;">Month of FOSS contributions - Feb '13</a>
+                    </h2>
+                    
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>I'm documenting my contributions to FOSS every month from now for two purposes:</p>
+<ul class="simple">
+<li>As a log of my activity</li>
+<li>To serve as a motivation for further participation</li>
+</ul>
+<p>Psst, also for boasting about it, wink wink.</p>
+</div>
+<div class="section" id="whoosh">
+<h2>Whoosh</h2>
+<p>While trying to work on django-haystack, I found a bug reported by Zed Shaw
+where a search query would crash the search page provided by haystack.</p>
+<p>Upon digging into haystack and whoosh, I found that there's a edge case in the
+whoosh query parser where passing a query containg a stop word and negative
+filter can raise an error (e.g: the query string <cite>?q=-1</cite>). I figured out a simple
+fix and submitted a pull request which was promptly accepted.</p>
+<p>I was hoping to find something to contribute to haystack and help with the
+maintanance, but looks like it will have to wait untill I get some more time.</p>
+<p><a class="reference external" href="https://bitbucket.org/mchaput/whoosh/commits/362fc2999c8cabc51370f433de7402fafd536ec6">362fc299</a></p>
+</div>
+<div class="section" id="django-browserid">
+<h2>django-browserid</h2>
+<p>I have always been a fan of mozilla and django-browserid looks like the perfect
+match for me to contribute towards. I tried out the library by going through
+the docs and found it to be a breeze. I was able to improve the docs a bit and
+triage a few bugs.</p>
+<p>I have to say people working on this project are very helpful and
+understanding. Looking forward to spending more time on this project in the
+future.</p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/f5fc0f124fda1fded862863ef56cab11f23c308d">f5fc0f12</a></p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/b9a17a4088211908de2a17a57668a646555f068a">b9a17a408</a></p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I really enjoyed working on these projects, and I'm looking forward to speding more time to get more
+comfortable with them and contributing even more. Here's to bigger, better things!</p>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="./month-of-foss-contributions-feb-13.html">posted at  9:00 pm</a>&nbsp;&middot;&nbsp;<a href="./category/foss.html" rel="tag">FOSS</a>                        
+                        <div class="tags">
+                            <a href="./tag/foss.html">foss</a>
+                            <a href="./tag/contributions.html">contributions</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <h4 class="date">Feb 23,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="./pycon-india-2012-talk.html" rel="bookmark" title="Permanent Link to &quot;Developing Ubuntu Apps for fun and profit&quot;">Developing Ubuntu Apps for fun and profit</a>
+                    </h2>
+                    
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>This was a talk I presented at PyCon India 2012.</p>
+<iframe src="https://docs.google.com/presentation/d/1FCkHcZ8cim0oy58sOcG7xeyL4HKmP4v8xR4_wdnLYxM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="./pycon-india-2012-talk.html">posted at  5:00 pm</a>&nbsp;&middot;&nbsp;<a href="./category/talk.html" rel="tag">talk</a>                        
+                        <div class="tags">
+                            <a href="./tag/ubuntu.html">ubuntu</a>
+                            <a href="./tag/talk.html">talk</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <h4 class="date">Jan 14,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="./announcing-editorize-beta.html" rel="bookmark" title="Permanent Link to &quot;Announcing Editorize beta&quot;">Announcing Editorize beta</a>
+                    </h2>
+                    
+                    <div class="section" id="summary">
+<h2>Summary</h2>
+<p>Editorize summons up your favorite text editor with a global shortcut so that
+you can edit your text the way you want it. Close the file and the text
+automagically gets pasted in to the text field you were editing.</p>
+<p>Editorize is in beta and needs some bugfixes/cleanup before it can be
+considered stable.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>The easiest way to install editorize is by <a class="reference external" href="https://launchpad.net/~tuxcanfly/+archive/editorize">using the ppa</a>:</p>
+<div class="highlight"><pre>sudo apt-add-repository ppa:tuxcanfly/editorize
+</pre></div>
+<p>After that, updated and install the <cite>editorize</cite> package:</p>
+<div class="highlight"><pre>sudo apt-get update
+sudo apt-get install editorize
+</pre></div>
+<p>Source packages are available from the <a class="reference external" href="https://launchpad.net/editorize">launchpad project page</a>.</p>
+<p>Now you should be able to launch the app from the start menu / dash or using
+the command <cite>editorize</cite></p>
+</div>
+<div class="section" id="usage">
+<h2>Usage</h2>
+<p>The default global keyboard shortcut for launching your default text editor is:</p>
+<div class="highlight"><pre>&lt;Ctrl&gt;&lt;Alt&gt;i
+</pre></div>
+<p>Both the shortcut and text editor can be customized from the <cite>Preferences</cite> menu
+of the App Indicator.</p>
+<p>Just go to a text input field on any app and use the above keyboard shortcut
+and your text editor should pop open. Now enter your text, save and close the
+editor. The input text should get copied to the app.</p>
+</div>
+<div class="section" id="help-bugs">
+<h2>Help/Bugs:</h2>
+<p>Please report <a class="reference external" href="https://bugs.launchpad.net/editorize">bugs on launchpad</a></p>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="./announcing-editorize-beta.html">posted at  5:00 pm</a>&nbsp;&middot;&nbsp;<a href="./category/project.html" rel="tag">project</a>                        
+                        <div class="tags">
+                            <a href="./tag/ubuntu.html">ubuntu</a>
+                            <a href="./tag/editorize.html">editorize</a>
+                            <a href="./tag/project.html">project</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <h4 class="date">Dec 15,  2012</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="./compiz-productivity.html" rel="bookmark" title="Permanent Link to &quot;Boost your productivity with compiz&quot;">Boost your productivity with compiz</a>
+                    </h2>
+                    
+                    <div class="section" id="summary">
+<h2>Summary</h2>
+<p>Compiz provides powerful window control features which can be used to improve
+daily work flow.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>To start off, you'll need to install the following additional packages:</p>
+<div class="highlight"><pre>compizconfig-settings-manager compiz-plugins-main compiz-plugins-extra
+</pre></div>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p>Before you proceed, you should know that fiddling with compiz is risky and
+will probably cause your desktop session to freeze if something goes wrong.</p>
+<p class="last"><a class="reference external" href="http://www.ubuntugeek.com/enable-ctrl-alt-backspace-in-ubuntukubuntu-10-04lucid-lynx.html">Enable XServer Zap</a> keyboard shortcut and be prepared to use it.</p>
+</div>
+</div>
+<div class="section" id="preferences">
+<h2>Preferences</h2>
+<p>Checkout the Preferences options. I prefer the Flat-file configuration backend
+as I want to keep all my compiz configuration in a single file and version
+control it.</p>
+<p>Make sure you create a backup of your current config using the Export option
+before you start.</p>
+<p>Here's my <a class="reference external" href="https://gist.github.com/4296914">compiz config</a> if you want to import it.</p>
+</div>
+<div class="section" id="commands">
+<h2>Commands</h2>
+<div class="figure align-center">
+<a class="reference external image-reference" href="./static/images/commands.gif"><img alt="Showcasing compiz commands" src="./static/images/commands.gif" /></a>
+<p class="caption">I've mapped &lt;Super&gt;Return to my terminal (urxvt) and
+&lt;Super&gt;e to my editor (gvim)</p>
+</div>
+<p>The Commands plugin gives you a simple way to assign keyboard shortcuts to any
+command.</p>
+<p>Figure out your most used commands/apps and assign shortcuts to them. No more
+wading your way through menus and searching for apps. Some commands I use:</p>
+<div class="highlight"><pre>urxvt -&gt; &lt;Super&gt;Return
+gvim -&gt; &lt;Super&gt;e
+chromium-browser --incognito -&gt; &lt;Shift&gt;&lt;Super&gt;w
+nautilus -&gt; &lt;Super&gt;t
+gnome-screensaver-command --lock -&gt; &lt;Super&gt;b
+</pre></div>
+</div>
+<div class="section" id="general">
+<h2>General</h2>
+<a class="reference external image-reference" href="./static/images/general.gif"><img alt="Showcasing general key bindings" class="align-center" src="./static/images/general.gif" /></a>
+<p>I find the key-bindings in this section very useful. For example:</p>
+<div class="highlight"><pre>Close Window -&gt; &lt;Super&gt;q
+Toggle Window Maximizes -&gt; &lt;Super&gt;m
+</pre></div>
+<p>Combined with Commands plugin above, this configuration allows you to spawn,
+close and maximize/restore your windows all with key-bindings!</p>
+</div>
+<div class="section" id="extra-wm-actions">
+<h2>Extra WM Actions</h2>
+<a class="reference external image-reference" href="./static/images/extra.gif"><img alt="Showcasing extra wm actions" class="align-center" src="./static/images/extra.gif" /></a>
+<p>Ever wanted to turn a window fullscreen but couldn't because the app doesn't
+allow it?  Want to keep a window on top?</p>
+<p>Extra WM actions provides key-bindings for these features. The mapping I use:</p>
+<div class="highlight"><pre>Toggle Fullscreen -&gt; &lt;Supfer&gt;f
+</pre></div>
+</div>
+<div class="section" id="grid">
+<h2>Grid</h2>
+<a class="reference external image-reference" href="./static/images/grid.gif"><img alt="Showcasing grid plugin" class="align-center" src="./static/images/grid.gif" /></a>
+<p>Grid provides a window tiling feature with intuitive key-bindings. It's great
+for people coming from a tiling window manager (like me).</p>
+</div>
+<div class="section" id="desktop-wall-cube">
+<h2>Desktop Wall/Cube</h2>
+<a class="reference external image-reference" href="./static/images/desktops.gif"><img alt="Showcasing desktop wall" class="align-center" src="./static/images/desktops.gif" /></a>
+<p>Both plugins provide an intuitive UI for multiple workspaces and are very
+helpful for multitasking.</p>
+<p>I map the Move Left/Right to keys on the home row:</p>
+<div class="highlight"><pre>Move Left -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;j
+Move Right -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;k
+</pre></div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I find compiz's features and customizability very useful and I hope you do too.</p>
+<p>Let me know if you know any useful tips in comments.</p>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="./compiz-productivity.html">posted at  5:00 pm</a>&nbsp;&middot;&nbsp;<a href="./category/tech.html" rel="tag">tech</a>                        
+                        <div class="tags">
+                            <a href="./tag/compiz.html">compiz</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div class="pages">                
+                    <a href="./index.html" class="prev_page">&larr;&nbsp;Previous</a>
+                    <span>Page 2 of 2</span>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer">
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="/feeds/all.atom.xml">Feed</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Boost your productivity with compiz / Does not compute</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="./theme/favicon.ico" />
+        <link rel="apple-touch-icon" href="./theme/apple-touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./theme/apple-touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./theme/apple-touch-icon-iphone4.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./theme/apple-touch-icon-ipad3.png" />
+
+        <link rel="stylesheet" href="./theme/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./theme/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="./theme/css/colorbox.css">
+
+        <link rel="stylesheet" href="./theme/css/main.css">
+
+        <script src="./theme/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <header id="site-header">
+                        <h1>
+                            <a href=".">Does not compute</a>
+                            <small>
+                                <span class="divider">/</span> 
+                            </small>
+                        </h1>
+                        <p>
+                            
+                        </p>
+                    </header>
+
+                    <div class="content">
+                            <section>
+    <article>
+        <header>
+            <h2><a href="./compiz-productivity.html" rel="bookmark">Boost your productivity with compiz</a></h2>
+            <time datetime="2012-12-15T17:00:00">Saturday, 15 December 2012</time>
+        </header>
+
+            <div class="section" id="summary">
+<h2>Summary</h2>
+<p>Compiz provides powerful window control features which can be used to improve
+daily work flow.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>To start off, you'll need to install the following additional packages:</p>
+<div class="highlight"><pre>compizconfig-settings-manager compiz-plugins-main compiz-plugins-extra
+</pre></div>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p>Before you proceed, you should know that fiddling with compiz is risky and
+will probably cause your desktop session to freeze if something goes wrong.</p>
+<p class="last"><a class="reference external" href="http://www.ubuntugeek.com/enable-ctrl-alt-backspace-in-ubuntukubuntu-10-04lucid-lynx.html">Enable XServer Zap</a> keyboard shortcut and be prepared to use it.</p>
+</div>
+</div>
+<div class="section" id="preferences">
+<h2>Preferences</h2>
+<p>Checkout the Preferences options. I prefer the Flat-file configuration backend
+as I want to keep all my compiz configuration in a single file and version
+control it.</p>
+<p>Make sure you create a backup of your current config using the Export option
+before you start.</p>
+<p>Here's my <a class="reference external" href="https://gist.github.com/4296914">compiz config</a> if you want to import it.</p>
+</div>
+<div class="section" id="commands">
+<h2>Commands</h2>
+<div class="figure align-center">
+<a class="reference external image-reference" href="./static/images/commands.gif"><img alt="Showcasing compiz commands" src="./static/images/commands.gif" /></a>
+<p class="caption">I've mapped &lt;Super&gt;Return to my terminal (urxvt) and
+&lt;Super&gt;e to my editor (gvim)</p>
+</div>
+<p>The Commands plugin gives you a simple way to assign keyboard shortcuts to any
+command.</p>
+<p>Figure out your most used commands/apps and assign shortcuts to them. No more
+wading your way through menus and searching for apps. Some commands I use:</p>
+<div class="highlight"><pre>urxvt -&gt; &lt;Super&gt;Return
+gvim -&gt; &lt;Super&gt;e
+chromium-browser --incognito -&gt; &lt;Shift&gt;&lt;Super&gt;w
+nautilus -&gt; &lt;Super&gt;t
+gnome-screensaver-command --lock -&gt; &lt;Super&gt;b
+</pre></div>
+</div>
+<div class="section" id="general">
+<h2>General</h2>
+<a class="reference external image-reference" href="./static/images/general.gif"><img alt="Showcasing general key bindings" class="align-center" src="./static/images/general.gif" /></a>
+<p>I find the key-bindings in this section very useful. For example:</p>
+<div class="highlight"><pre>Close Window -&gt; &lt;Super&gt;q
+Toggle Window Maximizes -&gt; &lt;Super&gt;m
+</pre></div>
+<p>Combined with Commands plugin above, this configuration allows you to spawn,
+close and maximize/restore your windows all with key-bindings!</p>
+</div>
+<div class="section" id="extra-wm-actions">
+<h2>Extra WM Actions</h2>
+<a class="reference external image-reference" href="./static/images/extra.gif"><img alt="Showcasing extra wm actions" class="align-center" src="./static/images/extra.gif" /></a>
+<p>Ever wanted to turn a window fullscreen but couldn't because the app doesn't
+allow it?  Want to keep a window on top?</p>
+<p>Extra WM actions provides key-bindings for these features. The mapping I use:</p>
+<div class="highlight"><pre>Toggle Fullscreen -&gt; &lt;Supfer&gt;f
+</pre></div>
+</div>
+<div class="section" id="grid">
+<h2>Grid</h2>
+<a class="reference external image-reference" href="./static/images/grid.gif"><img alt="Showcasing grid plugin" class="align-center" src="./static/images/grid.gif" /></a>
+<p>Grid provides a window tiling feature with intuitive key-bindings. It's great
+for people coming from a tiling window manager (like me).</p>
+</div>
+<div class="section" id="desktop-wall-cube">
+<h2>Desktop Wall/Cube</h2>
+<a class="reference external image-reference" href="./static/images/desktops.gif"><img alt="Showcasing desktop wall" class="align-center" src="./static/images/desktops.gif" /></a>
+<p>Both plugins provide an intuitive UI for multiple workspaces and are very
+helpful for multitasking.</p>
+<p>I map the Move Left/Right to keys on the home row:</p>
+<div class="highlight"><pre>Move Left -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;j
+Move Right -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;k
+</pre></div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I find compiz's features and customizability very useful and I hope you do too.</p>
+<p>Let me know if you know any useful tips in comments.</p>
+</div>
+
+            <footer>
+        <p>Posted in: <a href="./category/tech.html">tech</a></p>
+        <p>Tagged as: <a href="./tag/compiz.html">compiz</a></p>
+        <p>Wanna tell me what you think? <a href="./">Get in touch.</a></p>
+    </footer>
+        </footer>
+    </article>
+</section>                    </div>
+
+                    <footer id="site-footer">
+                        <p>
+                            <a href="" target="_blank">
+                                
+                            </a> tuxcanfly /
+                            <a href="./">Archives</a>
+                        </p>
+                        <p>
+                            Powered by
+                            <a href="https://github.com/getpelican/pelican" target="_blank">
+                                Pelican
+                            </a>
+                            /
+                            Source code on
+                            <a href="http://github.com/siovene/iovene.com" target="blank">
+                                GitHub
+                            </a>
+                            /
+                            Theme <code>Lannisport</code>, also on
+                            <a href="http://github.com/siovene/lannisport" target="_blank">
+                                GitHub
+                            </a>
+                        </p>
+                    </footer>
+                </div> <!-- header+content+footer span -->
+
+                <div class="span4">
+                    <aside id="sidebar">
+                        <div id="social-icons">
+                                                            <span class="social-icon">
+                                    <a href="https://github.com/tuxcanfly" target="_blank" title="GitHub">
+                                        <img src="./theme/img/GitHub.png" alt="GitHub"/>
+                                    </a>
+                                </span>
+                                                                                        <span class="social-icon">
+                                    <a href="http://in.linkedin.com/tuxcanfly" target="_blank" title="LinkedIn">
+                                        <img src="./theme/img/LinkedIn.png" alt="LinkedIn"/>
+                                    </a>
+                                </span>
+                                                                                                                                                                    </div>
+
+                        <div id="site-logo">
+                            <a href=".">
+                                <img alt="Does not compute" src="/static/" />
+                            </a>
+                        </div>
+
+                        <div id="navigation">
+                            <nav>
+	<h2>Pages</h2>
+	<ul>
+		<li>
+			<ul>
+				<li>
+					<a href=".">Blog</a>
+				</li>
+
+									<li>
+						<a href="./pages/about-me.html">About me:</a>
+					</li>
+							</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav>
+	<h2>Categories</h2>
+	<ul>
+		<li>
+			<ul>
+									<li>
+						<a href="./category/tech.html">tech</a>
+					</li>
+									<li>
+						<a href="./category/talk.html">talk</a>
+					</li>
+									<li>
+						<a href="./category/project.html">project</a>
+					</li>
+									<li>
+						<a href="./category/book-review.html">book-review</a>
+					</li>
+									<li>
+						<a href="./category/foss.html">FOSS</a>
+					</li>
+							</ul>
+		</li>
+	</ul>
+</nav>                        </div>
+                    </aside>
+                </div> <!-- logo+navigation span -->
+            </div> <!-- row -->
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./theme/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+        <script>$('body').popover || document.write('<script src="./theme/js/vendor/bootstrap.min.js"><\/script>')</script>
+
+        <script src="./theme/js/vendor/jquery.colorbox-min.js"></script>
+
+        <script src="./theme/js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount',''],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

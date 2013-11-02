@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Month of FOSS contributions - Mar '13</title>
+
+    <link rel="stylesheet" href="./theme/css/normalize.css" />
+    <link rel="stylesheet" href="./theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="./theme/css/style.css" />
+    <link rel="stylesheet" href="./theme/css/pygments.css" />	
+    <script src="./theme/js/custom.modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href=".">Does not compute</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+	
+                        <li><a href="./pages/about-me.html" class="button secondary small">About me:</a></li>
+                </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+    <article>
+    <header>
+        <h3 class="article-title"><a href="./month-of-foss-contributions-mar-13.html" rel="bookmark"
+        title="Permalink to Month of FOSS contributions - Mar '13">Month of FOSS contributions - Mar '13</a></h3>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tuxcanfly">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </header>
+
+    <h6 class="subheader" title="2013-03-31T21:00:00">Sunday, 31 March 2013
+    </h6>
+
+
+    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+    <p class="subheader">Category: <a href="./category/foss.html">FOSS</a>
+
+    Tagged: 
+        <a href="./tag/foss.html">foss </a>
+        <a href="./tag/contributions.html">contributions </a>
+    </p>
+
+
+
+
+    	<h4>Comments</h4>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'tuxcanfly-github'
+        var disqus_identifier = "month-of-foss-contributions-mar-13.html";
+        var disqus_url = "./month-of-foss-contributions-mar-13.html";
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="./archives.html">Archives</a>
+            <li><a href="./tags.html">Tags</a>
+                        <li><a href="/" rel="alternate">Atom feed</a></li>
+                                    <li><a href="/feeds/all.xml" rel="alternate">RSS feed</a></li>
+                    </ul>
+
+        		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+                    <li><a href="./category/tech.html">tech</a></li>
+                    <li><a href="./category/talk.html">talk</a></li>
+                    <li><a href="./category/project.html">project</a></li>
+                    <li><a href="./category/book-review.html">book-review</a></li>
+                    <li><a href="./category/foss.html">FOSS</a></li>
+           
+        </ul>
+        
+        		
+        
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>Does not compute by tuxcanfly</p>
+            </div>
+            </div>
+    </div>
+</footer>

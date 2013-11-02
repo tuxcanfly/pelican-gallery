@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <title>Month of FOSS contributions - Mar '13 - Does not compute</title>
+        <meta charset="utf-8" />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./theme/static/css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Full Atom Feed" />
+                                        <link href="/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Does not compute RSS Feed" />
+                        <link href="/feeds/foss.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Categories Atom Feed" />
+                        <link href="/feeds/foss.rss.xml" type="application/rss+xml" rel="alternate" title="Does not compute Categories RSS Feed" />
+                                    </head>
+
+    <body id="index" class="archive">
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class=""><a href=".">Home</a></li>
+                                    <li><a href="./pages/about-me.html">About me:</a></li>
+                                    <li><a href="./archives.html">Archives</a></li>
+                </ul>
+                <h3 class="text-muted"><a href=".">Does not compute</a></h3>
+             </div>
+            <section id="content" class="article content">
+  <header>
+    <h2 class="entry-title">
+      <a href="./month-of-foss-contributions-mar-13.html" rel="bookmark"
+         title="Permalink to Month of FOSS contributions - Mar '13">Month of FOSS contributions - Mar '13</a></h2>
+  
+  </header>
+  
+     
+  <div class="entry-content">
+    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+  </div><!-- /.entry-content -->
+   <footer class="post-info text-muted">
+    Posted on <abbr class="published" title="2013-03-31T21:00:00">
+      Sunday, 31 March 2013
+    </abbr>
+        <address class="vcard author">
+      by <a class="url fn" href="./author/javed-khan.html">Javed Khan</a>
+    </address> in <a href="./category/foss.html">FOSS</a> Tagged <a href="./tag/foss.html">foss </a><a href="./tag/contributions.html">contributions </a>      </footer><!-- /.post-info -->
+</section>
+        <div class="comment">
+        <div id="disqus_thread"></div> <!-- comment app container -->
+    </div>
+	<!-- Comment BEGIN -->
+    <script type="text/javascript">
+        var disqus_shortname = 'tuxcanfly-github'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+     <!-- Comment END -->
+                <footer id="contentinfo" class="footer">
+                    <nav class="pull-right bottom-nav">
+                        <a href="/feeds/all.atom.xml">RSS</a>
+                    </nav>
+                    <address id="about" class="vcard body">
+                    &copy; <a href=".">Does not compute</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
+                    </address><!-- /#about -->
+            </footer><!-- /#contentinfo -->
+        </div><!-- container -->
+    </body>
+</html>

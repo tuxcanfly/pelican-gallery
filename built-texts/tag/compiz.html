@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Does not compute</title>
+    <meta name="description" content="">
+    <meta name="author" content="tuxcanfly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="../theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="../theme/local.css" rel="stylesheet">
+    <link href="../theme/pygments.css" rel="stylesheet">
+    <link href="../theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span9">
+	<a href=".." class="brand">Does not compute</a>
+      </div>
+
+      <div class="span3" id="blog-nav">
+	<ul class="nav nav-pills pull-right">
+	                        <li><a href="../pages/about-me.html">About me:</a></li>
+                        	   	    <li >
+	      <a href="../category/tech.html ">tech</a>
+	   	    <li >
+	      <a href="../category/talk.html ">talk</a>
+	   	    <li >
+	      <a href="../category/project.html ">project</a>
+	   	    <li >
+	      <a href="../category/book-review.html ">book-review</a>
+	   	    <li >
+	      <a href="../category/foss.html ">FOSS</a>
+	   	</ul>
+      </div>
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span10">
+                
+
+        
+
+    <div class='row-fluid''>
+        <div class="article-title span9">
+            <a href="../compiz-productivity.html"><h1>Boost your productivity with compiz</h1></a>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+	<p>Saturday, 15 December 2012 </p>
+
+<p style="text-align: left;">
+Filed under <a href="../category/tech.html">tech</a>
+</p>
+<p style="text-align: left;">
+ 
+    Tags <a href="../tag/compiz.html">compiz</a> </p>
+<p>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="tuxcanfly">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</p>
+      </div>
+      <div class="article-content span8">
+	<div class="section" id="summary">
+<h2>Summary</h2>
+<p>Compiz provides powerful window control features which can be used to improve
+daily work flow.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>To start off, you'll need to install the following additional packages:</p>
+<div class="highlight"><pre>compizconfig-settings-manager compiz-plugins-main compiz-plugins-extra
+</pre></div>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p>Before you proceed, you should know that fiddling with compiz is risky and
+will probably cause your desktop session to freeze if something goes wrong.</p>
+<p class="last"><a class="reference external" href="http://www.ubuntugeek.com/enable-ctrl-alt-backspace-in-ubuntukubuntu-10-04lucid-lynx.html">Enable XServer Zap</a> keyboard shortcut and be prepared to use it.</p>
+</div>
+</div>
+<div class="section" id="preferences">
+<h2>Preferences</h2>
+<p>Checkout the Preferences options. I prefer the Flat-file configuration backend
+as I want to keep all my compiz configuration in a single file and version
+control it.</p>
+<p>Make sure you create a backup of your current config using the Export option
+before you start.</p>
+<p>Here's my <a class="reference external" href="https://gist.github.com/4296914">compiz config</a> if you want to import it.</p>
+</div>
+<div class="section" id="commands">
+<h2>Commands</h2>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../static/images/commands.gif"><img alt="Showcasing compiz commands" src="../static/images/commands.gif" /></a>
+<p class="caption">I've mapped &lt;Super&gt;Return to my terminal (urxvt) and
+&lt;Super&gt;e to my editor (gvim)</p>
+</div>
+<p>The Commands plugin gives you a simple way to assign keyboard shortcuts to any
+command.</p>
+<p>Figure out your most used commands/apps and assign shortcuts to them. No more
+wading your way through menus and searching for apps. Some commands I use:</p>
+<div class="highlight"><pre>urxvt -&gt; &lt;Super&gt;Return
+gvim -&gt; &lt;Super&gt;e
+chromium-browser --incognito -&gt; &lt;Shift&gt;&lt;Super&gt;w
+nautilus -&gt; &lt;Super&gt;t
+gnome-screensaver-command --lock -&gt; &lt;Super&gt;b
+</pre></div>
+</div>
+<div class="section" id="general">
+<h2>General</h2>
+<a class="reference external image-reference" href="../static/images/general.gif"><img alt="Showcasing general key bindings" class="align-center" src="../static/images/general.gif" /></a>
+<p>I find the key-bindings in this section very useful. For example:</p>
+<div class="highlight"><pre>Close Window -&gt; &lt;Super&gt;q
+Toggle Window Maximizes -&gt; &lt;Super&gt;m
+</pre></div>
+<p>Combined with Commands plugin above, this configuration allows you to spawn,
+close and maximize/restore your windows all with key-bindings!</p>
+</div>
+<div class="section" id="extra-wm-actions">
+<h2>Extra WM Actions</h2>
+<a class="reference external image-reference" href="../static/images/extra.gif"><img alt="Showcasing extra wm actions" class="align-center" src="../static/images/extra.gif" /></a>
+<p>Ever wanted to turn a window fullscreen but couldn't because the app doesn't
+allow it?  Want to keep a window on top?</p>
+<p>Extra WM actions provides key-bindings for these features. The mapping I use:</p>
+<div class="highlight"><pre>Toggle Fullscreen -&gt; &lt;Supfer&gt;f
+</pre></div>
+</div>
+<div class="section" id="grid">
+<h2>Grid</h2>
+<a class="reference external image-reference" href="../static/images/grid.gif"><img alt="Showcasing grid plugin" class="align-center" src="../static/images/grid.gif" /></a>
+<p>Grid provides a window tiling feature with intuitive key-bindings. It's great
+for people coming from a tiling window manager (like me).</p>
+</div>
+<div class="section" id="desktop-wall-cube">
+<h2>Desktop Wall/Cube</h2>
+<a class="reference external image-reference" href="../static/images/desktops.gif"><img alt="Showcasing desktop wall" class="align-center" src="../static/images/desktops.gif" /></a>
+<p>Both plugins provide an intuitive UI for multiple workspaces and are very
+helpful for multitasking.</p>
+<p>I map the Move Left/Right to keys on the home row:</p>
+<div class="highlight"><pre>Move Left -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;j
+Move Right -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;k
+</pre></div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I find compiz's features and customizability very useful and I hope you do too.</p>
+<p>Let me know if you know any useful tips in comments.</p>
+</div>
+ 
+	<a class="btn btn-mini xsmall" href="../compiz-productivity.html">
+          <i class="icon-comment"></i> Comment </a>
+	<hr />
+      </div>
+      
+    </div>
+    
+            <div class="pagination">
+<ul>
+    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+
+    <li class="active"><a href="../tag/compiz.html">1</a></li>
+
+    <li class="next disabled"><a href="#">&rarr; Next</a></li>
+
+</ul>
+</div>    
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+		        	<div class="site-nav span2" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href=".."><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="../archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="../tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    	    <li> <a href="../feeds/all.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+	                <li><a href="../" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p align="center"><a href="..">Does not compute</a>
+      &copy; tuxcanfly
+    Powered by <a href="github.com/getpelican/pelican">Pelican</a> and
+        <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>. 
+        Icons by <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> and 
+        <a href="http://gregoryloucas.github.com/Font-Awesome-More">Font Awesome More</a></p>
+
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+
+
+<script>var _gaq=[['_setAccount','UA-37076247-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+
+</body>
+</html>

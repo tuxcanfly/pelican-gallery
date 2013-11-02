@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <title>Does not compute</title>
+        <meta charset="utf-8" />
+                <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Full Atom Feed" />
+                                        <link href="/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Does not compute RSS Feed" />
+                        <link href="/feeds/foss.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Categories Atom Feed" />
+                        <link href="/feeds/foss.rss.xml" type="application/rss+xml" rel="alternate" title="Does not compute Categories RSS Feed" />
+                                </head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href=".">Does not compute <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+                                      <li><a href="./pages/about-me.html">About me:</a></li>
+                          </ul></nav><!-- /#menu -->
+        <section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="./month-of-foss-contributions-mar-13.html" rel="bookmark"
+         title="Permalink to Month of FOSS contributions - Mar '13">Month of FOSS contributions - Mar '13</a></h2>
+  
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-03-31T21:00:00">
+      Sunday, 31 March 2013
+    </abbr>
+        <address class="vcard author">
+      By <a class="url fn" href="./author/javed-khan.html">Javed Khan</a>
+    </address>
+      </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

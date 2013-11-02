@@ -1,0 +1,304 @@
+
+<!DOCTYPE HTML>
+<!--
+	Dopetrope 2.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+					<title>Does not compute</title>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+			<meta charset="utf-8" />
+						<link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Full Atom Feed" />
+															<link href="/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Does not compute RSS Feed" />
+									<link href="/feeds/tech.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Categories Atom Feed" />
+									<link href="/feeds/tech.rss.xml" type="application/rss+xml" rel="alternate" title="Does not compute Categories RSS Feed" />
+												<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" rel="stylesheet" />
+				<link rel="stylesheet" href="/theme/css/pygment.css" />
+			<noscript>
+				<link rel="stylesheet" href="/theme/css/skel-noscript.css" />
+				<link rel="stylesheet" href="/theme/css/style.css" />
+				<link rel="stylesheet" href="/theme/css/style-desktop.css" />
+			</noscript>
+			</head>
+	<body class="no-sidebar">
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+						
+							<!-- Header -->
+								<section id="header">
+									
+									<!-- Logo -->
+									<h1><a href=".">Does not compute</a></h1>
+									
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+																																																			<li><a href="./pages/about-me.html">About me:</a></li>
+																																				</ul>
+										</nav>
+
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Main Wrapper -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row">
+	<div class="12u">
+		<!-- Portfolio -->
+			<section>
+				<div>
+					<div class="row">
+						<div class="12u skel-cell-mainContent">
+							<!-- Content -->
+								<article class="box is-post">
+									<a href="#" class="image image-full"><img src=""/></a>
+									<div class="section" id="summary">
+<h2>Summary</h2>
+<p>Compiz provides powerful window control features which can be used to improve
+daily work flow.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>To start off, you'll need to install the following additional packages:</p>
+<div class="highlight"><pre>compizconfig-settings-manager compiz-plugins-main compiz-plugins-extra
+</pre></div>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p>Before you proceed, you should know that fiddling with compiz is risky and
+will probably cause your desktop session to freeze if something goes wrong.</p>
+<p class="last"><a class="reference external" href="http://www.ubuntugeek.com/enable-ctrl-alt-backspace-in-ubuntukubuntu-10-04lucid-lynx.html">Enable XServer Zap</a> keyboard shortcut and be prepared to use it.</p>
+</div>
+</div>
+<div class="section" id="preferences">
+<h2>Preferences</h2>
+<p>Checkout the Preferences options. I prefer the Flat-file configuration backend
+as I want to keep all my compiz configuration in a single file and version
+control it.</p>
+<p>Make sure you create a backup of your current config using the Export option
+before you start.</p>
+<p>Here's my <a class="reference external" href="https://gist.github.com/4296914">compiz config</a> if you want to import it.</p>
+</div>
+<div class="section" id="commands">
+<h2>Commands</h2>
+<div class="figure align-center">
+<a class="reference external image-reference" href="./static/images/commands.gif"><img alt="Showcasing compiz commands" src="./static/images/commands.gif" /></a>
+<p class="caption">I've mapped &lt;Super&gt;Return to my terminal (urxvt) and
+&lt;Super&gt;e to my editor (gvim)</p>
+</div>
+<p>The Commands plugin gives you a simple way to assign keyboard shortcuts to any
+command.</p>
+<p>Figure out your most used commands/apps and assign shortcuts to them. No more
+wading your way through menus and searching for apps. Some commands I use:</p>
+<div class="highlight"><pre>urxvt -&gt; &lt;Super&gt;Return
+gvim -&gt; &lt;Super&gt;e
+chromium-browser --incognito -&gt; &lt;Shift&gt;&lt;Super&gt;w
+nautilus -&gt; &lt;Super&gt;t
+gnome-screensaver-command --lock -&gt; &lt;Super&gt;b
+</pre></div>
+</div>
+<div class="section" id="general">
+<h2>General</h2>
+<a class="reference external image-reference" href="./static/images/general.gif"><img alt="Showcasing general key bindings" class="align-center" src="./static/images/general.gif" /></a>
+<p>I find the key-bindings in this section very useful. For example:</p>
+<div class="highlight"><pre>Close Window -&gt; &lt;Super&gt;q
+Toggle Window Maximizes -&gt; &lt;Super&gt;m
+</pre></div>
+<p>Combined with Commands plugin above, this configuration allows you to spawn,
+close and maximize/restore your windows all with key-bindings!</p>
+</div>
+<div class="section" id="extra-wm-actions">
+<h2>Extra WM Actions</h2>
+<a class="reference external image-reference" href="./static/images/extra.gif"><img alt="Showcasing extra wm actions" class="align-center" src="./static/images/extra.gif" /></a>
+<p>Ever wanted to turn a window fullscreen but couldn't because the app doesn't
+allow it?  Want to keep a window on top?</p>
+<p>Extra WM actions provides key-bindings for these features. The mapping I use:</p>
+<div class="highlight"><pre>Toggle Fullscreen -&gt; &lt;Supfer&gt;f
+</pre></div>
+</div>
+<div class="section" id="grid">
+<h2>Grid</h2>
+<a class="reference external image-reference" href="./static/images/grid.gif"><img alt="Showcasing grid plugin" class="align-center" src="./static/images/grid.gif" /></a>
+<p>Grid provides a window tiling feature with intuitive key-bindings. It's great
+for people coming from a tiling window manager (like me).</p>
+</div>
+<div class="section" id="desktop-wall-cube">
+<h2>Desktop Wall/Cube</h2>
+<a class="reference external image-reference" href="./static/images/desktops.gif"><img alt="Showcasing desktop wall" class="align-center" src="./static/images/desktops.gif" /></a>
+<p>Both plugins provide an intuitive UI for multiple workspaces and are very
+helpful for multitasking.</p>
+<p>I map the Move Left/Right to keys on the home row:</p>
+<div class="highlight"><pre>Move Left -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;j
+Move Right -&gt; &lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;k
+</pre></div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I find compiz's features and customizability very useful and I hope you do too.</p>
+<p>Let me know if you know any useful tips in comments.</p>
+</div>
+
+								</article>
+						</div>
+					</div>
+				</div>
+			</section>
+	</div>
+</div>
+
+				</div>
+			</div>
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<!-- Footer -->
+					<section id="footer" class="container">
+						<div class="row">
+							<div class="8u">
+								<section>
+									<header>
+										<h2>Latest articles</h2>
+									</header>
+									<ul class="dates">
+																			<li>
+											<span class="date">Oct <strong>26</strong></span>
+											<h3><a href="animal-farm.html">Animal Farm - George Orwell</a></h3>
+											<p><p class="first last">A review of this book.</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Oct <strong>19</strong></span>
+											<h3><a href="kafka-on-the-shore.html">Kafka on the shore - Haruki Murakami</a></h3>
+											<p><p class="first last">A review of this book.</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Oct <strong>13</strong></span>
+											<h3><a href="sabriel.html">Sabriel - Garth Nix</a></h3>
+											<p><p class="first last">A review of this book.</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Oct <strong>06</strong></span>
+											<h3><a href="his-dark-materials.html">His Dark Materials - Phillip Pullman</a></h3>
+											<p><p class="first last">A review of this book.</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Jul <strong>08</strong></span>
+											<h3><a href="the-trial.html">The Trial - Franz Kafka</a></h3>
+											<p><p class="first last">A review of this book.</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Jun <strong>26</strong></span>
+											<h3><a href="the-metamorphosis.html">The Metamorphosis - Franz Kafka</a></h3>
+											<p><p class="first last">A review of this book.</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">May <strong>05</strong></span>
+											<h3><a href="bitcoin-for-developers.html">Bitcoin for developers</a></h3>
+											<p><p class="first last">Slides related to a talk on bitcoin I gave at Agiliq in April 2013</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">May <strong>05</strong></span>
+											<h3><a href="month-of-foss-contributions-apr-13.html">Month of FOSS contributions - Apr '13</a></h3>
+											<p><p class="first last">Round up of my contributions to FOSS in Apr '13</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Mar <strong>31</strong></span>
+											<h3><a href="month-of-foss-contributions-mar-13.html">Month of FOSS contributions - Mar '13</a></h3>
+											<p><p class="first last">Round up of my contributions to FOSS in Mar '13</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Mar <strong>30</strong></span>
+											<h3><a href="logging-in-django.html">Logging in Django</a></h3>
+											<p><p class="first last">Slides related to the talk I presented at Hyderabad Python meetup</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Feb <strong>28</strong></span>
+											<h3><a href="month-of-foss-contributions-feb-13.html">Month of FOSS contributions - Feb '13</a></h3>
+											<p><p class="first last">Round up of my contributions to FOSS in Feb '13</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Feb <strong>23</strong></span>
+											<h3><a href="pycon-india-2012-talk.html">Developing Ubuntu Apps for fun and profit</a></h3>
+											<p><p class="first last">Slides related to my talk at PyCon India 2012 on Ubuntu app development</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Jan <strong>14</strong></span>
+											<h3><a href="announcing-editorize-beta.html">Announcing Editorize beta</a></h3>
+											<p><p class="first last">Editorize is a Ubuntu app I've been working on during the past few weekends</p>
+</p>
+										</li>
+																			<li>
+											<span class="date">Dec <strong>15</strong></span>
+											<h3><a href="compiz-productivity.html">Boost your productivity with compiz</a></h3>
+											<p><p class="first last">Tips for getting the most from compiz</p>
+</p>
+										</li>
+																		</ul>
+								</section>
+							</div>
+													</div>
+						<div class="row">
+							<div class="4u">
+								<section>
+									<header>
+										<h2>Blogroll</h2>
+									</header>
+									<ul class="divided">
+																			</ul>
+								</section>
+							</div>
+														<div class="4u">
+								<section>
+									<header>
+										<h2>Categories</h2>
+									</header>
+									<ul class="divided">
+																					<li><a href="./category/tech.html">tech</a></li>
+																					<li><a href="./category/talk.html">talk</a></li>
+																					<li><a href="./category/project.html">project</a></li>
+																					<li><a href="./category/book-review.html">book-review</a></li>
+																					<li><a href="./category/foss.html">FOSS</a></li>
+																			</ul>
+								</section>
+							</div>
+														<div class="4u">
+							
+								<section>
+									<header>
+										<h2>Contact</h2>
+									</header>
+									<ul class="social">
+																																																	</ul>
+																	</section>
+							</div>
+						</div>
+											</section>
+			</div>
+		<script src="/theme/js/jquery.min.js"></script>
+		<script src="/theme/js/jquery.dropotron.js"></script>
+		<script src="/theme/js/config.js"></script>
+		<script src="/theme/js/skel.min.js"></script>
+		<script src="/theme/js/skel-panels.min.js"></script>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="/theme/css/ie8.css" /><![endif]-->
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Does not compute &middot; Month of FOSS contributions - Mar '13</title>
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Atom Feed" />
+                
+        <link rel="stylesheet" href="./theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <ul id="nav">
+                <li><a href=".">Home</a></li>
+                <li><a href="./pages/about-me.html">About me:</a></li>
+                <li><a href="./archives.html">Archives</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href=".">Does not compute</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">Mar 31,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="./month-of-foss-contributions-mar-13.html" rel="bookmark" title="Permanent Link to &quot;Month of FOSS contributions - Mar '13&quot;">Month of FOSS contributions - Mar '13</a>
+                    </h2>
+                    
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="./month-of-foss-contributions-mar-13.html">posted at  9:00 pm</a>&nbsp;&middot;&nbsp;<a href="./category/foss.html" rel="tag">FOSS</a>                        
+                        <div class="tags">
+                            <a href="./tag/foss.html">foss</a>
+                            <a href="./tag/contributions.html">contributions</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer">
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="/feeds/all.atom.xml">Feed</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>

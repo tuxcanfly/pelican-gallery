@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Month of FOSS contributions - Mar '13</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./theme/css/style.css" type="text/css" />
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute ATOM Feed" />
+    </head>
+    <body>
+        <h1>Month of FOSS contributions - Mar '13</h1>
+    <div class="info">
+         By <a class="url fn" href="#">Javed Khan</a>
+         on <a></a>
+     about <a href="./category/foss.html">FOSS</a>
+    </div>
+    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+
+    <div class="copyright info vcard">Design by <a class="fn url"
+    href="http://martyalchin.com">Marty Alchin</a>, <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">some rights reserved</a>. Powered by <a href="http://alexis.notomyidea.org/pelican/">pelican</a></div>
+    </body>
+</html>

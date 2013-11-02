@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Does not compute - Month of FOSS contributions - Mar '13</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+  <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute - Flux ATOM" />
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-37076247-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </head>
+<body>
+<div id="page">
+
+  <header id="header">
+    <h1><a href="./index.html">Does not compute</a></h1>
+  </header>
+
+<nav id="menu">
+  <a href="./index.html">Accueil</a>
+        <a href="./pages/about-me.html">About me:</a>
+        <a href="./archives.html">Archives</a>
+
+</nav> <!-- /#nav -->
+  <section id="content">
+        
+  <article class="post">
+        <h2 class="page_title"><a href="month-of-foss-contributions-mar-13.html" rel="bookmark" title="Does not compute - Month of FOSS contributions - Mar '13">Month of FOSS contributions - Mar '13</a></h2>
+
+        <section class="post_content">
+        <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+        </section>
+
+              <details class="meta">
+          Publié le <time datetime="2013-03-31T21:00:00" pubdate="pubdate">Sunday, 31 March 2013</time>
+           par Javed Khan dans «<a href="./category/foss.html">FOSS</a>».  
+          Mots-clés: <a href="./tag/foss.html">foss</a>, <a href="./tag/contributions.html">contributions</a></p>        </details>   </article>
+
+                <div class="comments">
+        <h2>Commentaires:</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+               var disqus_identifier = "month-of-foss-contributions-mar-13.html";
+               (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = 'http://tuxcanfly-github.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+        </div>
+        
+  </section> <!-- /#content -->
+
+<aside id="sidebar">
+
+  <div class="widget" id="categories">
+    <h2>Catégories</h2>
+    <ul>
+          <li ><a href="./category/tech.html">tech</a></li>
+          <li ><a href="./category/talk.html">talk</a></li>
+          <li ><a href="./category/project.html">project</a></li>
+          <li ><a href="./category/book-review.html">book-review</a></li>
+          <li class="active"><a href="./category/foss.html">FOSS</a></li>
+        </ul>
+  </div>
+
+    <div class="widget" id="tags">
+    <h2>Mots-clés:</h2>
+    <ul>
+          <li><a href="./tag/foss.html">foss</a></li>
+          <li><a href="./tag/contributions.html">contributions</a></li>
+          <li><a class="more" href="./tags.html">Plus...</a></li>
+    </ul>
+  </div>
+    
+  
+  
+     <div class="widget" id="subscribe">
+    <h2>S'abonner</h2>
+      <ul>
+        <li><a href="./" rel="alternate">Flux ATOM</a></li>
+                <li><a href="./feeds/all.xml" rel="alternate">Flux RSS</a></li>
+              </ul>
+    </div>
+  </aside>
+
+  <footer id="footer">
+    <p>Propulsé par <a href="http://docs.notmyidea.org/alexis/pelican/index.html">Pelican</a>.</p>
+  </footer>
+</div> <!-- /#page -->
+</body>
+</html>

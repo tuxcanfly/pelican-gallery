@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Does not compute &middot; articles in the "FOSS" category</title>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Atom Feed" />
+                
+        <link rel="stylesheet" href="../theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="../theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <ul id="nav">
+                <li class="ephemeral selected"><a href="../category/foss.html">FOSS</a></li>
+                <li><a href="..">Home</a></li>
+                <li><a href="../pages/about-me.html">About me:</a></li>
+                <li><a href="../archives.html">Archives</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href="..">Does not compute</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">May  5,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="../month-of-foss-contributions-apr-13.html" rel="bookmark" title="Permanent Link to &quot;Month of FOSS contributions - Apr '13&quot;">Month of FOSS contributions - Apr '13</a>
+                    </h2>
+                    
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Apr '13.</p>
+</div>
+<div class="section" id="merchant">
+<h2>Merchant</h2>
+<p>django-merchant is a Django app to accept payments from various payment
+processors via Pluggable backends.</p>
+<p>I'm glad to have the chance the contribute to merchant again; I was previously
+involved in the design as well as eWay and bitcoin backends.</p>
+<p>I have added a Continuous Integration build for merchant over at <a class="reference external" href="https://travis-ci.org/agiliq/merchant">Travis</a></p>
+<p>What's more, the <a class="reference external" href="http://merchant.agiliq.com">demo</a> is less of an eyesore now; it has been revamped using
+bootstrap</p>
+<p>We received contributions to Braintree, Google Checkout, and eWay backends
+which I have reviewed and merged.</p>
+<p>Overall, it’s been a really good month for django-merchant, here's to hoping
+this continues.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="../static/images/merchant-progress.png"><img alt="Merchant Progress" src="../static/images/merchant-progress.png" /></a>
+<p class="caption">GitHub pulse for django-merchant</p>
+</div>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="../month-of-foss-contributions-apr-13.html">posted at  9:00 pm</a>&nbsp;&middot;&nbsp;<a href="../category/foss.html" rel="tag">FOSS</a>                        
+                        <div class="tags">
+                            <a href="../tag/foss.html">foss</a>
+                            <a href="../tag/contributions.html">contributions</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <h4 class="date">Mar 31,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="../month-of-foss-contributions-mar-13.html" rel="bookmark" title="Permanent Link to &quot;Month of FOSS contributions - Mar '13&quot;">Month of FOSS contributions - Mar '13</a>
+                    </h2>
+                    
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="../month-of-foss-contributions-mar-13.html">posted at  9:00 pm</a>&nbsp;&middot;&nbsp;<a href="../category/foss.html" rel="tag">FOSS</a>                        
+                        <div class="tags">
+                            <a href="../tag/foss.html">foss</a>
+                            <a href="../tag/contributions.html">contributions</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <h4 class="date">Feb 28,  2013</h4>
+                <div class="post">
+                    <h2 class="title">
+                        <a href="../month-of-foss-contributions-feb-13.html" rel="bookmark" title="Permanent Link to &quot;Month of FOSS contributions - Feb '13&quot;">Month of FOSS contributions - Feb '13</a>
+                    </h2>
+                    
+                    <div class="section" id="about">
+<h2>About</h2>
+<p>I'm documenting my contributions to FOSS every month from now for two purposes:</p>
+<ul class="simple">
+<li>As a log of my activity</li>
+<li>To serve as a motivation for further participation</li>
+</ul>
+<p>Psst, also for boasting about it, wink wink.</p>
+</div>
+<div class="section" id="whoosh">
+<h2>Whoosh</h2>
+<p>While trying to work on django-haystack, I found a bug reported by Zed Shaw
+where a search query would crash the search page provided by haystack.</p>
+<p>Upon digging into haystack and whoosh, I found that there's a edge case in the
+whoosh query parser where passing a query containg a stop word and negative
+filter can raise an error (e.g: the query string <cite>?q=-1</cite>). I figured out a simple
+fix and submitted a pull request which was promptly accepted.</p>
+<p>I was hoping to find something to contribute to haystack and help with the
+maintanance, but looks like it will have to wait untill I get some more time.</p>
+<p><a class="reference external" href="https://bitbucket.org/mchaput/whoosh/commits/362fc2999c8cabc51370f433de7402fafd536ec6">362fc299</a></p>
+</div>
+<div class="section" id="django-browserid">
+<h2>django-browserid</h2>
+<p>I have always been a fan of mozilla and django-browserid looks like the perfect
+match for me to contribute towards. I tried out the library by going through
+the docs and found it to be a breeze. I was able to improve the docs a bit and
+triage a few bugs.</p>
+<p>I have to say people working on this project are very helpful and
+understanding. Looking forward to spending more time on this project in the
+future.</p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/f5fc0f124fda1fded862863ef56cab11f23c308d">f5fc0f12</a></p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/b9a17a4088211908de2a17a57668a646555f068a">b9a17a408</a></p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I really enjoyed working on these projects, and I'm looking forward to speding more time to get more
+comfortable with them and contributing even more. Here's to bigger, better things!</p>
+</div>
+
+
+                    <div class="clear"></div>
+                    <div class="info">
+                        <a href="../month-of-foss-contributions-feb-13.html">posted at  9:00 pm</a>&nbsp;&middot;&nbsp;<a href="../category/foss.html" rel="tag">FOSS</a>                        
+                        <div class="tags">
+                            <a href="../tag/foss.html">foss</a>
+                            <a href="../tag/contributions.html">contributions</a>
+                        </div>                        
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer">
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="/feeds/all.atom.xml">Feed</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>

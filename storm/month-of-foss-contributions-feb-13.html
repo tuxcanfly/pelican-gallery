@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Month of FOSS contributions - Feb '13</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Round up of my contributions to FOSS in Feb '13">  <meta name="author" content="Javed Khan">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <link href="./theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link href="./" type="application/atom+xml" rel="alternate" title="Does not compute ATOM Feed" />
+  <link href="./feeds/all.xml" type="application/rss+xml" rel="alternate" title="Does not compute RSS Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+    <div class="logo"><a href=".">Does not compute</a></div>
+    <div class="small"></div>
+<div class="nav">
+    <ul>
+      <li><a href="./pages/about-me.html">About me:</a></li>
+    </ul>
+</div>
+</div>    <div id="main">
+<h2><a href="./month-of-foss-contributions-feb-13.html">Month of FOSS contributions - Feb '13</a></h2>
+<h5><i class="icon-feather"></i> Thursday, 28 February 2013 </h5>
+<div class="section" id="about">
+<h2>About</h2>
+<p>I'm documenting my contributions to FOSS every month from now for two purposes:</p>
+<ul class="simple">
+<li>As a log of my activity</li>
+<li>To serve as a motivation for further participation</li>
+</ul>
+<p>Psst, also for boasting about it, wink wink.</p>
+</div>
+<div class="section" id="whoosh">
+<h2>Whoosh</h2>
+<p>While trying to work on django-haystack, I found a bug reported by Zed Shaw
+where a search query would crash the search page provided by haystack.</p>
+<p>Upon digging into haystack and whoosh, I found that there's a edge case in the
+whoosh query parser where passing a query containg a stop word and negative
+filter can raise an error (e.g: the query string <cite>?q=-1</cite>). I figured out a simple
+fix and submitted a pull request which was promptly accepted.</p>
+<p>I was hoping to find something to contribute to haystack and help with the
+maintanance, but looks like it will have to wait untill I get some more time.</p>
+<p><a class="reference external" href="https://bitbucket.org/mchaput/whoosh/commits/362fc2999c8cabc51370f433de7402fafd536ec6">362fc299</a></p>
+</div>
+<div class="section" id="django-browserid">
+<h2>django-browserid</h2>
+<p>I have always been a fan of mozilla and django-browserid looks like the perfect
+match for me to contribute towards. I tried out the library by going through
+the docs and found it to be a breeze. I was able to improve the docs a bit and
+triage a few bugs.</p>
+<p>I have to say people working on this project are very helpful and
+understanding. Looking forward to spending more time on this project in the
+future.</p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/f5fc0f124fda1fded862863ef56cab11f23c308d">f5fc0f12</a></p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/b9a17a4088211908de2a17a57668a646555f068a">b9a17a408</a></p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I really enjoyed working on these projects, and I'm looking forward to speding more time to get more
+comfortable with them and contributing even more. Here's to bigger, better things!</p>
+</div>
+
+<h5><i class="icon-user"></i> <a href="./author/javed-khan.html">Javed Khan</a>,
+<i class="icon-bookmarks"></i> <span><a href="./tag/foss.html">foss</a> / </span>
+<span><a href="./tag/contributions.html">contributions</a> / </span>
+</h5>
+<p align="center"><a href="#">on the top</a></p>
+<h3>Comments</h3>
+<div id="disqus_thread">
+    <script type="text/javascript">
+       var disqus_identifier = "month-of-foss-contributions-feb-13.html";
+       (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = 'http://tuxcanfly-github.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+</div></div>
+<div id="footer-wrapper">
+<ul class="footer">
+       <li class="footer"><a href="./tag/bitcoin.html">bitcoin&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/books.html">books&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/compiz.html">compiz&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/contributions.html">contributions&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/django.html">django&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/editorize.html">editorize&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/fantasy.html">fantasy&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/foss.html">foss&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/his-dark-materials.html">his-dark-materials&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/kafka.html">kafka&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/orwell.html">orwell&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/project.html">project&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/sabriel.html">sabriel&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/talk.html">talk&nbsp;&bull;&nbsp;</a></li>
+       <li class="footer"><a href="./tag/ubuntu.html">ubuntu&nbsp;&bull;&nbsp;</a></li>
+  </ul>
+<br/><p>&copy; 2013 &bull; <a href=".">Does not compute </a> &bull; powered by <a href="https://github.com/getpelican">pelican</a> &bull; <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en"><i class="icon-cc"></i></a></p>
+</div></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37076247-1', '');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

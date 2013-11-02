@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pelican theme gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./gallery/flatly/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./gallery/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./gallery/assets/css/bootswatch.min.css">
+    <link rel="stylesheet" href="./gallery/assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./gallery/bower_components/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="./gallery/bower_components/bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script src="./gallery/assets/js/bsa.js"></script>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./gallery/" class="navbar-brand">Pelican Gallery</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a tabindex="-1" href="/pelican-gallery/crowsfoot">crowsfoot</a></li><li><a tabindex="-1" href="/pelican-gallery/blueidea">blueidea</a></li><li><a tabindex="-1" href="/pelican-gallery/tuxlite_tbs">tuxlite_tbs</a></li><li><a tabindex="-1" href="/pelican-gallery/sneakyidea">sneakyidea</a></li><li><a tabindex="-1" href="/pelican-gallery/irfan">irfan</a></li><li><a tabindex="-1" href="/pelican-gallery/neat">neat</a></li><li><a tabindex="-1" href="/pelican-gallery/plumage">plumage</a></li><li><a tabindex="-1" href="/pelican-gallery/pelipress">pelipress</a></li><li><a tabindex="-1" href="/pelican-gallery/subtle">subtle</a></li><li><a tabindex="-1" href="/pelican-gallery/pelican-bootstrap3">pelican-bootstrap3</a></li><li><a tabindex="-1" href="/pelican-gallery/pelican-cait">pelican-cait</a></li><li><a tabindex="-1" href="/pelican-gallery/jesuislibre">jesuislibre</a></li><li><a tabindex="-1" href="/pelican-gallery/notmyidea-cms-fr">notmyidea-cms-fr</a></li><li><a tabindex="-1" href="/pelican-gallery/iris">iris</a></li><li><a tabindex="-1" href="/pelican-gallery/bootstrap">bootstrap</a></li><li><a tabindex="-1" href="/pelican-gallery/tuxlite_zf">tuxlite_zf</a></li><li><a tabindex="-1" href="/pelican-gallery/nmnlist">nmnlist</a></li><li><a tabindex="-1" href="/pelican-gallery/storm">storm</a></li><li><a tabindex="-1" href="/pelican-gallery/waterspill-en">waterspill-en</a></li><li><a tabindex="-1" href="/pelican-gallery/simple-bootstrap">simple-bootstrap</a></li><li><a tabindex="-1" href="/pelican-gallery/relapse">relapse</a></li><li><a tabindex="-1" href="/pelican-gallery/dev-random2">dev-random2</a></li><li><a tabindex="-1" href="/pelican-gallery/martyalchin">martyalchin</a></li><li><a tabindex="-1" href="/pelican-gallery/niu-x2">niu-x2</a></li><li><a tabindex="-1" href="/pelican-gallery/bluegrasshopper">bluegrasshopper</a></li><li><a tabindex="-1" href="/pelican-gallery/lightweight">lightweight</a></li><li><a tabindex="-1" href="/pelican-gallery/pelican-mockingbird">pelican-mockingbird</a></li><li><a tabindex="-1" href="/pelican-gallery/bootlex">bootlex</a></li><li><a tabindex="-1" href="/pelican-gallery/pure">pure</a></li><li><a tabindex="-1" href="/pelican-gallery/svbhack">svbhack</a></li><li><a tabindex="-1" href="/pelican-gallery/dev-random">dev-random</a></li><li><a tabindex="-1" href="/pelican-gallery/lannisport">lannisport</a></li><li><a tabindex="-1" href="/pelican-gallery/water-iris">water-iris</a></li><li><a tabindex="-1" href="/pelican-gallery/notmyidea-cms">notmyidea-cms</a></li><li><a tabindex="-1" href="/pelican-gallery/elegant">elegant</a></li><li><a tabindex="-1" href="/pelican-gallery/waterspill">waterspill</a></li><li><a tabindex="-1" href="/pelican-gallery/cebong">cebong</a></li><li><a tabindex="-1" href="/pelican-gallery/Just-Read">Just-Read</a></li><li><a tabindex="-1" href="/pelican-gallery/fresh">fresh</a></li><li><a tabindex="-1" href="/pelican-gallery/monospace">monospace</a></li><li><a tabindex="-1" href="/pelican-gallery/chunk">chunk</a></li><li><a tabindex="-1" href="/pelican-gallery/bootstrap2">bootstrap2</a></li><li><a tabindex="-1" href="/pelican-gallery/syte">syte</a></li><li><a tabindex="-1" href="/pelican-gallery/sundown">sundown</a></li><li><a tabindex="-1" href="/pelican-gallery/basic">basic</a></li><li><a tabindex="-1" href="/pelican-gallery/gum">gum</a></li><li><a tabindex="-1" href="/pelican-gallery/built-texts">built-texts</a></li><li><a tabindex="-1" href="/pelican-gallery/brownstone">brownstone</a></li><li><a tabindex="-1" href="/pelican-gallery/svbtle">svbtle</a></li><li><a tabindex="-1" href="/pelican-gallery/mnmlist">mnmlist</a></li><li><a tabindex="-1" href="/pelican-gallery/html5-dopetrope">html5-dopetrope</a></li><li><a tabindex="-1" href="/pelican-gallery/bold">bold</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="https://github.com/tuxcanfly/pelican-gallery" target="_blank">
+                    GitHub
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section-preview">
+        <div class="container">
+            <div class="row">
+
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/crowsfoot"><img src="http://placehold.it/200x348&text=N/A" class="img-responsive" alt="crowsfoot"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>crowsfoot</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/crowsfoot">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/blueidea"><img src="/pelican-gallery/gallery/thumbnails/blueidea.png" class="img-responsive" alt="blueidea"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>blueidea</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/blueidea">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/tuxlite_tbs"><img src="/pelican-gallery/gallery/thumbnails/tuxlite_tbs.png" class="img-responsive" alt="tuxlite_tbs"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>tuxlite_tbs</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/tuxlite_tbs">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/sneakyidea"><img src="/pelican-gallery/gallery/thumbnails/sneakyidea.png" class="img-responsive" alt="sneakyidea"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>sneakyidea</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/sneakyidea">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/irfan"><img src="/pelican-gallery/gallery/thumbnails/irfan.png" class="img-responsive" alt="irfan"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>irfan</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/irfan">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/neat"><img src="http://placehold.it/200x348&text=N/A" class="img-responsive" alt="neat"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>neat</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/neat">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/plumage"><img src="/pelican-gallery/gallery/thumbnails/plumage.png" class="img-responsive" alt="plumage"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>plumage</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/plumage">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/pelipress"><img src="http://placehold.it/200x348&text=N/A" class="img-responsive" alt="pelipress"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>pelipress</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/pelipress">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/subtle"><img src="/pelican-gallery/gallery/thumbnails/subtle.png" class="img-responsive" alt="subtle"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>subtle</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/subtle">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/pelican-bootstrap3"><img src="/pelican-gallery/gallery/thumbnails/pelican-bootstrap3.png" class="img-responsive" alt="pelican-bootstrap3"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>pelican-bootstrap3</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/pelican-bootstrap3">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/pelican-cait"><img src="/pelican-gallery/gallery/thumbnails/pelican-cait.png" class="img-responsive" alt="pelican-cait"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>pelican-cait</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/pelican-cait">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/jesuislibre"><img src="/pelican-gallery/gallery/thumbnails/jesuislibre.png" class="img-responsive" alt="jesuislibre"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>jesuislibre</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/jesuislibre">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/notmyidea-cms-fr"><img src="/pelican-gallery/gallery/thumbnails/notmyidea-cms-fr.png" class="img-responsive" alt="notmyidea-cms-fr"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>notmyidea-cms-fr</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/notmyidea-cms-fr">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/iris"><img src="/pelican-gallery/gallery/thumbnails/iris.png" class="img-responsive" alt="iris"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>iris</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/iris">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/bootstrap"><img src="/pelican-gallery/gallery/thumbnails/bootstrap.png" class="img-responsive" alt="bootstrap"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>bootstrap</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/bootstrap">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/tuxlite_zf"><img src="/pelican-gallery/gallery/thumbnails/tuxlite_zf.png" class="img-responsive" alt="tuxlite_zf"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>tuxlite_zf</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/tuxlite_zf">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/nmnlist"><img src="/pelican-gallery/gallery/thumbnails/nmnlist.png" class="img-responsive" alt="nmnlist"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>nmnlist</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/nmnlist">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/storm"><img src="/pelican-gallery/gallery/thumbnails/storm.png" class="img-responsive" alt="storm"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>storm</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/storm">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/waterspill-en"><img src="/pelican-gallery/gallery/thumbnails/waterspill-en.png" class="img-responsive" alt="waterspill-en"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>waterspill-en</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/waterspill-en">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/simple-bootstrap"><img src="/pelican-gallery/gallery/thumbnails/simple-bootstrap.png" class="img-responsive" alt="simple-bootstrap"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>simple-bootstrap</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/simple-bootstrap">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/relapse"><img src="/pelican-gallery/gallery/thumbnails/relapse.png" class="img-responsive" alt="relapse"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>relapse</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/relapse">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/dev-random2"><img src="/pelican-gallery/gallery/thumbnails/dev-random2.png" class="img-responsive" alt="dev-random2"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>dev-random2</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/dev-random2">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/martyalchin"><img src="/pelican-gallery/gallery/thumbnails/martyalchin.png" class="img-responsive" alt="martyalchin"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>martyalchin</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/martyalchin">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/niu-x2"><img src="/pelican-gallery/gallery/thumbnails/niu-x2.png" class="img-responsive" alt="niu-x2"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>niu-x2</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/niu-x2">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/bluegrasshopper"><img src="/pelican-gallery/gallery/thumbnails/bluegrasshopper.png" class="img-responsive" alt="bluegrasshopper"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>bluegrasshopper</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/bluegrasshopper">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/lightweight"><img src="/pelican-gallery/gallery/thumbnails/lightweight.png" class="img-responsive" alt="lightweight"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>lightweight</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/lightweight">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/pelican-mockingbird"><img src="/pelican-gallery/gallery/thumbnails/pelican-mockingbird.png" class="img-responsive" alt="pelican-mockingbird"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>pelican-mockingbird</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/pelican-mockingbird">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/bootlex"><img src="/pelican-gallery/gallery/thumbnails/bootlex.png" class="img-responsive" alt="bootlex"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>bootlex</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/bootlex">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/pure"><img src="/pelican-gallery/gallery/thumbnails/pure.png" class="img-responsive" alt="pure"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>pure</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/pure">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/svbhack"><img src="/pelican-gallery/gallery/thumbnails/svbhack.png" class="img-responsive" alt="svbhack"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>svbhack</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/svbhack">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/dev-random"><img src="/pelican-gallery/gallery/thumbnails/dev-random.png" class="img-responsive" alt="dev-random"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>dev-random</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/dev-random">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/lannisport"><img src="/pelican-gallery/gallery/thumbnails/lannisport.png" class="img-responsive" alt="lannisport"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>lannisport</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/lannisport">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/water-iris"><img src="/pelican-gallery/gallery/thumbnails/water-iris.png" class="img-responsive" alt="water-iris"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>water-iris</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/water-iris">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/notmyidea-cms"><img src="/pelican-gallery/gallery/thumbnails/notmyidea-cms.png" class="img-responsive" alt="notmyidea-cms"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>notmyidea-cms</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/notmyidea-cms">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/elegant"><img src="/pelican-gallery/gallery/thumbnails/elegant.png" class="img-responsive" alt="elegant"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>elegant</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/elegant">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/waterspill"><img src="/pelican-gallery/gallery/thumbnails/waterspill.png" class="img-responsive" alt="waterspill"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>waterspill</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/waterspill">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/cebong"><img src="/pelican-gallery/gallery/thumbnails/cebong.png" class="img-responsive" alt="cebong"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>cebong</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/cebong">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/Just-Read"><img src="/pelican-gallery/gallery/thumbnails/Just-Read.png" class="img-responsive" alt="Just-Read"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>Just-Read</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/Just-Read">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/fresh"><img src="http://placehold.it/200x348&text=N/A" class="img-responsive" alt="fresh"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>fresh</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/fresh">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/monospace"><img src="/pelican-gallery/gallery/thumbnails/monospace.png" class="img-responsive" alt="monospace"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>monospace</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/monospace">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/chunk"><img src="/pelican-gallery/gallery/thumbnails/chunk.png" class="img-responsive" alt="chunk"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>chunk</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/chunk">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/bootstrap2"><img src="/pelican-gallery/gallery/thumbnails/bootstrap2.png" class="img-responsive" alt="bootstrap2"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>bootstrap2</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/bootstrap2">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/syte"><img src="/pelican-gallery/gallery/thumbnails/syte.png" class="img-responsive" alt="syte"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>syte</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/syte">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/sundown"><img src="http://placehold.it/200x348&text=N/A" class="img-responsive" alt="sundown"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>sundown</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/sundown">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/basic"><img src="/pelican-gallery/gallery/thumbnails/basic.png" class="img-responsive" alt="basic"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>basic</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/basic">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/gum"><img src="/pelican-gallery/gallery/thumbnails/gum.png" class="img-responsive" alt="gum"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>gum</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/gum">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/built-texts"><img src="/pelican-gallery/gallery/thumbnails/built-texts.png" class="img-responsive" alt="built-texts"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>built-texts</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/built-texts">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/brownstone"><img src="/pelican-gallery/gallery/thumbnails/brownstone.png" class="img-responsive" alt="brownstone"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>brownstone</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/brownstone">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/svbtle"><img src="/pelican-gallery/gallery/thumbnails/svbtle.png" class="img-responsive" alt="svbtle"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>svbtle</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/svbtle">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/mnmlist"><img src="/pelican-gallery/gallery/thumbnails/mnmlist.png" class="img-responsive" alt="mnmlist"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>mnmlist</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/mnmlist">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/html5-dopetrope"><img src="/pelican-gallery/gallery/thumbnails/html5-dopetrope.png" class="img-responsive" alt="html5-dopetrope"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>html5-dopetrope</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/html5-dopetrope">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <div class="preview">
+                        <div class="thumbnail image">
+                            
+                            <a href="/pelican-gallery/bold"><img src="http://placehold.it/200x348&text=N/A" class="img-responsive" alt="bold"></a>
+                            
+                        </div>
+                        <div class="options">
+                            <h3>bold</h3>
+                            <div class="btn-group"><a class="btn btn-info" href="/pelican-gallery/bold">Preview</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+            <p>Made by <a href="http://tuxcanfly.me">Jakh Daven</a>. Contact him at <a href="mailto:tuxcanfly@gmail.com">tuxcanfly@gmail.com</a>.</p>
+            <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
+
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+
+    <script src="./gallery/bower_components/jquery/jquery.min.js"></script>
+    <script src="./gallery/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./gallery/assets/js/bootswatch.js"></script>
+    <script type="text/javascript">
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="./gallery/platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </body>
+</html>

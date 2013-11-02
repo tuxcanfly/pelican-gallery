@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <title>Does not compute</title>
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+        <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css" />
+        <link rel="stylesheet" href="./theme/css/font-awesome.css" type="text/css" />
+        <meta charset="utf-8" />
+      
+                <link href="/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Does not compute RSS Feed" />
+        
+        <!-- Javascript-->
+        <script src="./theme/js/invisible-menu-scroll.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script type="text/javascript"> 
+          $(function() {
+            invisibleMenu();
+          });
+        </script> 
+        </head>
+
+<body id="index" class="home">
+         <div class="navigation">
+        <ol class="nav">
+          <li class="current"><a href=".">Blog</a> </li>
+          <li><a href="./archives.html">Archive</a></li>
+          <li><a href="./tags.html">Tags</a> </li>
+          <li><a href="feeds/all.xml">RSS</a> </li>
+        </ol>
+      </div>
+        <header id="banner" class="body">
+                <div class="banner"><a href=".">Does not compute <strong></strong></a></div>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+                                      <li><a href="./pages/about-me.html">About me:</a></li>
+                          </ul></nav><!-- /#menu -->
+        <div class="box">
+            <section id="content" class="body">
+  <header class="post">
+    <h2 class="entry-title">
+      Month of FOSS contributions - Mar '13
+    </h2>
+  </header>
+  <footer class="post-info">
+    <abbr>
+      Sunday, 31 March 2013 
+               By <a class="url fn" href="./author/javed-khan.html">Javed Khan</a>
+        
+    </abbr>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+  </div><!-- /.entry-content -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'tuxcanfly-github'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+            <hr/>
+            <footer id="contentinfo" class="footer">
+                <div>
+                    <a href=".">tuxcanfly</a> (2012)
+                </div>
+                <div>
+                    This work is licensed under <a rel="license" href="http://opensource.org/licenses/bsd-3-clause">3 clause BSD</a>. Source code available on <a rel="source code" href="https://github.com/slok/blog">Github</a>
+                </div>
+                <div>
+                    powered by <a href="http://getpelican.com/">Pelican</a>
+                    and <a href="http://python.org">Python</a>. 
+                    <a href="http://github.com/slok/iris">Theme</a> by <a href="http://xlarrakoetxea.org">Xabier Larrakoetxea</a> based on <a href="http://flask.pocoo.org/">Flask</a> theme
+                </div>
+                <div>
+                    Social icons (font awesome) by <a href="http://fortawesome.github.com/Font-Awesome/"> fort awesome<a>.
+                    <a href="http://www.google.com/webfonts/specimen/The+Girl+Next+Door">Title</a> and <a href="http://www.google.com/webfonts/specimen/Inconsolata">source code</a> fonts by google fonts
+                </div>
+                <div class="social">
+                                                        </div>
+            </footer><!-- /#contentinfo -->
+        </div>
+        <!--Add statistycs-->
+        </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+
+    <title>  Month of FOSS contributions - Mar '13
+ | Does not compute</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content=""/>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css"/>
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.magnific-popup/0.8.9/magnific-popup.css"/>
+    <link rel="stylesheet" href="./theme/css/jquery.mglass.css"/>
+    <link rel="stylesheet" href="./theme/css/pygment-solarized-dark.css"/>
+    <link rel="stylesheet" href="./theme/css/style.css"/>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'/>
+    
+    
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Feeds -->
+          <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Full Atom Feed"/>
+                      <link href="/feeds/all.xml" type="application/rss+xml" rel="alternate" title="Does not compute RSS Feed"/>
+              <link href="/feeds/foss.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute Categories Atom Feed"/>
+              <link href="/feeds/foss.rss.xml" type="application/rss+xml" rel="alternate" title="Does not compute Categories RSS Feed"/>
+            
+        
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <div class="page-header">
+                    <h1><a href=".">Does not compute</a> <small></small></h1>
+        </div>
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <a class="brand" href="." title="">Does not compute</a>
+            <ul class="nav">
+                                                              <li ><a href="./pages/about-me.html">About me:</a></li>
+                                          </ul>
+                      </div>
+        </div>
+      </header>
+
+      <section>
+                
+        <div class="row">
+          <div class=" span9  ">
+              <h1>
+    <a href="./month-of-foss-contributions-mar-13.html" rel="bookmark" title="Permalink to Month of FOSS contributions - Mar &#39;13">Month of FOSS contributions - Mar '13</a>
+  </h1>
+          </div>
+        </div>
+
+        <div class="row">
+
+          
+          <div class=" span9 " id="content" role="main">
+                  
+
+  <div>
+    <div class="section" id="about">
+<h2>About</h2>
+<p>Stuff that I contributed to Open Source in Mar '13.</p>
+</div>
+<div class="section" id="django">
+<h2>Django</h2>
+<p>I debugged an issue in django <cite>ModelChoiceField</cite> and <cite>ModelMultipleChoiceField</cite>
+which was causing model forms to be validated even though they weren't changed.
+The problem was that <cite>has_changed</cite> was comparing an <cite>object_id</cite> or list of
+<cite>ids</cite> with an instance or queryset.</p>
+<p>Even though the fix was a part of another branch, the tests I had proposed were
+included in the commit.</p>
+<p><a class="reference external" href="https://github.com/django/django/commit/3318595c0bfeda9f6bae8aa11dda68647ae55fde">3318595c</a></p>
+<p><a class="reference external" href="https://github.com/django/django/pull/660">Pull request</a></p>
+</div>
+<div class="section" id="vimux-django-tests">
+<h2>Vimux-django-tests</h2>
+<p>This is a pet project that I started to make it easier to run individual django
+tests from within vim.</p>
+<p><a class="reference external" href="https://github.com/tuxcanfly/vimux-django-tests">Vimux-django-tests</a></p>
+</div>
+
+  </div>
+
+  
+      <div class="comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'tuxcanfly-github';
+        var disqus_identifier = "month-of-foss-contributions-mar-13.html";
+        var disqus_title = "Month of FOSS contributions - Mar &#39;13";
+        var disqus_url = "./month-of-foss-contributions-mar-13.html";
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus</a>.</noscript>
+    </div>
+  
+          </div>
+
+                      <div class="span3">
+                <div class="well">
+
+    <p><abbr class="icon-calendar" title="2013-03-31T21:00:00"> Sunday, 31 March 2013</abbr></p>
+
+          <p><address class="icon-user"> By <a href="./author/javed-khan.html" rel="author">Javed Khan</a></address></p>
+    
+    
+    <hr/>
+
+          <p>
+                                                                                                                                                  <a href="./category/foss.html" rel="tag tooltip" class="label label-info" data-placement="right" data-original-title="3 articles in this category">FOSS</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <a href="/tag/foss.html" rel="tooltip" class="label" data-placement="right" data-original-title="3 articles with this tag">foss</a>
+                      <a href="/tag/contributions.html" rel="tooltip" class="label" data-placement="right" data-original-title="3 articles with this tag">contributions</a>
+                        </p>
+      <hr/>
+    
+    
+    
+  </div>
+              
+            </div>
+          
+        </div>
+      </section>
+
+    </div>
+
+    <!-- TODO: make footer sticky -->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+
+                                          <div class="span2">
+                          </div>
+                      <div class="span2">
+                          </div>
+          
+          <div class="span2">
+            <h5>Browse content by</h5>
+            <ul class="unstyled">
+                              <li><a href="./categories.html" class="icon-tags"> Categories</a></li>
+                                          
+                              <li><a href="/feeds/foss.atom.xml" class="icon-rss"> Feed</a></li>
+                          </ul>
+          </div>
+
+          <div class="span2 muted">
+            <h5>Copyright notice</h5>
+            <p>© Copyright 2013 tuxcanfly.</p>
+                      </div>
+
+          <div class="span2 muted">
+            <h5>Disclaimer</h5>
+            <p>All opinions expressed in this site are my own personal opinions and are not endorsed by, nor do they represent the opinions of my previous, current and future employers or any of its affiliates, partners or customers.</p>
+          </div>
+
+          <div class="span2">
+            <h5 class="pull-right"><a href="#" class="icon-arrow-up"> Back to top</a></h5>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row span12 muted text-center">
+          Site generated by <a href="http://getpelican.com"> Pelican</a>.<br/>
+          <a href="https://github.com/kdeldycke/plumage"> Plumage</a> theme by <a href="http://kevin.deldycke.com">Kevin Deldycke</a>.
+        </div>
+      </div>
+
+    </footer>
+
+          <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37076247-1']);
+                _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+        <script src="//code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.magnific-popup/0.8.9/jquery.magnific-popup.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script src="./theme/js/jquery.mglass.js"></script>
+    <script src="./theme/js/application.js"></script>
+    
+  </body>
+</html>

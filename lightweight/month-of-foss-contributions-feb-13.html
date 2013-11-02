@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Does not compute - Month of FOSS contributions - Feb '13</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+  <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Does not compute - Flux ATOM" />
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-37076247-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </head>
+<body>
+<div id="page">
+
+  <header id="header">
+    <h1><a href="./index.html">Does not compute</a></h1>
+  </header>
+
+<nav id="menu">
+  <a href="./index.html">Accueil</a>
+        <a href="./pages/about-me.html">About me:</a>
+        <a href="./archives.html">Archives</a>
+
+</nav> <!-- /#nav -->
+  <section id="content">
+        
+  <article class="post">
+        <h2 class="page_title"><a href="month-of-foss-contributions-feb-13.html" rel="bookmark" title="Does not compute - Month of FOSS contributions - Feb '13">Month of FOSS contributions - Feb '13</a></h2>
+
+        <section class="post_content">
+        <div class="section" id="about">
+<h2>About</h2>
+<p>I'm documenting my contributions to FOSS every month from now for two purposes:</p>
+<ul class="simple">
+<li>As a log of my activity</li>
+<li>To serve as a motivation for further participation</li>
+</ul>
+<p>Psst, also for boasting about it, wink wink.</p>
+</div>
+<div class="section" id="whoosh">
+<h2>Whoosh</h2>
+<p>While trying to work on django-haystack, I found a bug reported by Zed Shaw
+where a search query would crash the search page provided by haystack.</p>
+<p>Upon digging into haystack and whoosh, I found that there's a edge case in the
+whoosh query parser where passing a query containg a stop word and negative
+filter can raise an error (e.g: the query string <cite>?q=-1</cite>). I figured out a simple
+fix and submitted a pull request which was promptly accepted.</p>
+<p>I was hoping to find something to contribute to haystack and help with the
+maintanance, but looks like it will have to wait untill I get some more time.</p>
+<p><a class="reference external" href="https://bitbucket.org/mchaput/whoosh/commits/362fc2999c8cabc51370f433de7402fafd536ec6">362fc299</a></p>
+</div>
+<div class="section" id="django-browserid">
+<h2>django-browserid</h2>
+<p>I have always been a fan of mozilla and django-browserid looks like the perfect
+match for me to contribute towards. I tried out the library by going through
+the docs and found it to be a breeze. I was able to improve the docs a bit and
+triage a few bugs.</p>
+<p>I have to say people working on this project are very helpful and
+understanding. Looking forward to spending more time on this project in the
+future.</p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/f5fc0f124fda1fded862863ef56cab11f23c308d">f5fc0f12</a></p>
+<p><a class="reference external" href="https://github.com/mozilla/django-browserid/commit/b9a17a4088211908de2a17a57668a646555f068a">b9a17a408</a></p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>I really enjoyed working on these projects, and I'm looking forward to speding more time to get more
+comfortable with them and contributing even more. Here's to bigger, better things!</p>
+</div>
+
+        </section>
+
+              <details class="meta">
+          Publié le <time datetime="2013-02-28T21:00:00" pubdate="pubdate">Thursday, 28 February 2013</time>
+           par Javed Khan dans «<a href="./category/foss.html">FOSS</a>».  
+          Mots-clés: <a href="./tag/foss.html">foss</a>, <a href="./tag/contributions.html">contributions</a></p>        </details>   </article>
+
+                <div class="comments">
+        <h2>Commentaires:</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+               var disqus_identifier = "month-of-foss-contributions-feb-13.html";
+               (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = 'http://tuxcanfly-github.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+        </div>
+        
+  </section> <!-- /#content -->
+
+<aside id="sidebar">
+
+  <div class="widget" id="categories">
+    <h2>Catégories</h2>
+    <ul>
+          <li ><a href="./category/tech.html">tech</a></li>
+          <li ><a href="./category/talk.html">talk</a></li>
+          <li ><a href="./category/project.html">project</a></li>
+          <li ><a href="./category/book-review.html">book-review</a></li>
+          <li class="active"><a href="./category/foss.html">FOSS</a></li>
+        </ul>
+  </div>
+
+    <div class="widget" id="tags">
+    <h2>Mots-clés:</h2>
+    <ul>
+          <li><a href="./tag/foss.html">foss</a></li>
+          <li><a href="./tag/contributions.html">contributions</a></li>
+          <li><a class="more" href="./tags.html">Plus...</a></li>
+    </ul>
+  </div>
+    
+  
+  
+     <div class="widget" id="subscribe">
+    <h2>S'abonner</h2>
+      <ul>
+        <li><a href="./" rel="alternate">Flux ATOM</a></li>
+                <li><a href="./feeds/all.xml" rel="alternate">Flux RSS</a></li>
+              </ul>
+    </div>
+  </aside>
+
+  <footer id="footer">
+    <p>Propulsé par <a href="http://docs.notmyidea.org/alexis/pelican/index.html">Pelican</a>.</p>
+  </footer>
+</div> <!-- /#page -->
+</body>
+</html>
